@@ -1,0 +1,98 @@
+
+
+.about-img{
+    width: 100%;
+    height: 450px;
+    background-image: url(https://images.unsplash.com/photo-1608635661411-b8de70247ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80);
+    filter: brightness(0.7);
+    filter: contrast(1.2);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+    p{
+        color: white;
+        font-size: 1em;
+        padding: 50px;
+    }
+    h1{
+        text-align: center;
+        font-size: 5em;
+        color: white;
+        padding: 50px;
+    }
+}
+.about-equipo{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    ". c p p ."
+    ". c p p ."
+    ". c p p .";
+    padding: 20px;
+    .about-card{
+        width: 320px;
+        height: 320px;
+        grid-area: c;
+        img{
+            border-radius: 150px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about-card-description{
+        grid-area: p;
+        h2{
+            padding: 10px;
+            font-size: 2em;
+            color: $colorC;
+        }
+        p{
+            
+            margin: 20px;
+            padding-right: 10px;
+            color: white;
+        }
+    }
+}
+.about-servicio{
+    @extend .about-equipo;
+    background-color:rgb(65, 65, 65);
+    grid-template-areas: 
+    ". p p c ."
+    ". p p c ."
+    ". p p c .";
+}
+
+    
+
+@media (max-width: 970px){
+    .about-img{
+        height: 550px;
+        h1{
+            font-size: 2.5em;
+        }
+    }    
+    .about-equipo{
+        height: 720px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+    ". c c ."
+    "p p p p"
+    "p p p p";
+    }
+    .about-servicio{
+        height: 700px;
+        grid-template-areas: 
+    ". c c ."
+    "p p p p"
+    "p p p p";
+    }
+    
+}
+

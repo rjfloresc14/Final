@@ -1,0 +1,52 @@
+header{
+    background-color: black;
+}
+.main-headerdiv{
+    background-color: transparent;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        display: flex;
+        flex-direction: row;
+        
+        img{
+            width: 35px;
+            height: 35px;
+            margin: 15px;
+        }
+        h2{
+            color: $colorC;
+        }
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        a{
+            margin: 15px;
+            color: $colorC;
+            text-decoration: none;
+            :hover {
+                color: #D90416;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 490px){
+    .main-headerdiv{
+        flex-direction: column;
+        height: 100px;
+        .navbar ul{
+            margin-top: -20px;
+            a{
+                margin: 7px;
+            }
+        }
+    }
+}
