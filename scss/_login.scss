@@ -23,15 +23,7 @@ $colorF: rgba(48, 48, 48, 0.7);
         }
     }
     .login-box{
-        margin: auto;
-        border-radius: 10px;
-        background-color:  $colorF;
-        position: relative;
-        width: 400px;
-        height: 550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include form;
         h2{
             font-size: 2.5em;
             color: white;

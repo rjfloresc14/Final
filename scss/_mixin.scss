@@ -1,0 +1,18 @@
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@mixin form{
+        margin: auto;
+        border-radius: 10px;
+        background-color:  $colorF;
+        position: relative;
+        width: 400px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}   

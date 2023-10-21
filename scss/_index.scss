@@ -14,10 +14,7 @@ $colorF: rgba(48, 48, 48, 0.7);
 .index-cards{
     width: 100%;
     max-height: 1700px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex;
     .index-card{
         width: 250px;
         height: 350px;
